@@ -8,7 +8,7 @@ const projects = [
     technologies: "React.js, Thirdweb.js, Sepolia Testnet, MetaMask",
     liveDemoUrl: "#",
     githubUrl: "#",
-    image: "https://picsum.photos/600/400",
+    image: "/assets/crowdfunding-dapp.png",
     aiHint: "blockchain crypto"
   },
   {
@@ -18,7 +18,7 @@ const projects = [
     technologies: "bolt.diy, AI, No-code",
     liveDemoUrl: null,
     githubUrl: "#",
-    image: "https://picsum.photos/600/400",
+    image: "/assets/lazii-ai.png",
     aiHint: "ai robot"
   },
   {
@@ -28,7 +28,7 @@ const projects = [
     technologies: "Next.js, Genkit, Gemini, Tailwind CSS, Framer Motion",
     liveDemoUrl: "#",
     githubUrl: "#",
-    image: "https://picsum.photos/600/400",
+    image: "/assets/kunal-ai-portfolio.png",
     aiHint: "abstract code"
   },
 ];
