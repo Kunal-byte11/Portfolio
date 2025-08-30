@@ -15,7 +15,7 @@ type Project = {
   name: string;
   description: string;
   technologies: string;
-  liveDemoUrl: string;
+  liveDemoUrl: string | null;
   githubUrl: string;
   image: string;
   aiHint: string;
@@ -84,12 +84,14 @@ export function ProjectCard({ project }: ProjectCardProps) {
             GitHub
           </Link>
         </Button>
-        <Button asChild variant="default">
-          <Link href={project.liveDemoUrl} target="_blank">
-            <Play className="mr-2 h-4 w-4" />
-            Live Demo
-          </Link>
-        </Button>
+        {project.liveDemoUrl && (
+          <Button asChild variant="default">
+            <Link href={project.liveDemoUrl} target="_blank">
+              <Play className="mr-2 h-4 w-4" />
+              Live Demo
+            </Link>
+          </Button>
+        )}
       </div>
     </motion.div>
   );

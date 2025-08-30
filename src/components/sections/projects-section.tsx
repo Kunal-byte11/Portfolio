@@ -8,7 +8,7 @@ const projects = [
     technologies: "React.js, Thirdweb.js, Sepolia Testnet, MetaMask",
     liveDemoUrl: "#",
     githubUrl: "#",
-    image: "/assets/crowdfunding-dapp.png",
+    image: "https://picsum.photos/600/400",
     aiHint: "blockchain crypto"
   },
   {
@@ -16,40 +16,10 @@ const projects = [
     description:
       "An AI-driven no-code environment, based on open-source bolt.diy, that enables users to create applications instantly and democratizes app building with AI-assisted automation.",
     technologies: "bolt.diy, AI, No-code",
-    liveDemoUrl: "#",
+    liveDemoUrl: null,
     githubUrl: "#",
-    image: "/assets/lazii-ai.png",
+    image: "https://picsum.photos/600/400",
     aiHint: "ai robot"
-  },
-  {
-    name: "Incorrupta",
-    description:
-      "A decentralized document storage solution for police departments, ensuring tamper-proof case files using Web3 and IPFS to promote transparency and prevent corruption.",
-    technologies: "Web3, IPFS, Decentralized Storage",
-    liveDemoUrl: "#",
-    githubUrl: "#",
-    image: "/assets/incorrupta.png",
-    aiHint: "secure documents"
-  },
-  {
-    name: "Talkzii",
-    description:
-      "An AI companion app for emotional support, offering conversations, journaling, and recommendations. It blends empathy with technology for a human-first AI experience.",
-    technologies: "React, Gemini API, Supabase, RAG",
-    liveDemoUrl: "#",
-    githubUrl: "#",
-    image: "/assets/talkzii.png",
-    aiHint: "conversation bubbles"
-  },
-  {
-    name: "BYL (Behind Your Label)",
-    description:
-      "Scan ingredient lists on product packaging to learn about each ingredient’s effects and find safer alternatives, with a focus on Indian products.",
-    technologies: "Mobile App, OCR, Data Scraping",
-    liveDemoUrl: "#",
-    githubUrl: "#",
-    image: "/assets/byl.png",
-    aiHint: "ingredients scan"
   },
   {
     name: "KunalAI Portfolio",
@@ -58,7 +28,7 @@ const projects = [
     technologies: "Next.js, Genkit, Gemini, Tailwind CSS, Framer Motion",
     liveDemoUrl: "#",
     githubUrl: "#",
-    image: "/assets/kunal-ai-portfolio.png",
+    image: "https://picsum.photos/600/400",
     aiHint: "abstract code"
   },
 ];
