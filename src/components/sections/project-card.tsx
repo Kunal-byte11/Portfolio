@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { Github, Play, Loader2 } from "lucide-react";
@@ -10,6 +9,7 @@ import { cn } from "@/lib/utils";
 import { getAiProjectSummary } from "@/lib/actions";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { OptimizedImage } from "@/components/ui/optimized-image";
 
 type Project = {
   name: string;
@@ -50,13 +50,14 @@ export function ProjectCard({ project }: ProjectCardProps) {
       transition={{ duration: 0.5 }}
       className="group relative overflow-hidden rounded-2xl border border-accent/20 bg-card/50 p-6 shadow-lg backdrop-blur-sm transition-all duration-300 hover:border-accent/50 hover:shadow-accent/20"
     >
-      <div className="relative mb-4 h-48 w-full overflow-hidden rounded-lg">
-        <Image
+      <div className="relative mb-4 h-48 w-full overflow-hidden rounded-lg bg-muted">
+        <OptimizedImage
           src={project.image}
           alt={project.name}
           fill
           className="object-cover transition-transform duration-500 group-hover:scale-105"
           data-ai-hint={project.aiHint}
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
       </div>
       <h3 className="font-headline text-xl font-bold text-primary">{project.name}</h3>
@@ -88,7 +89,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
           <Button asChild variant="default">
             <Link href={project.liveDemoUrl} target="_blank">
               <Play className="mr-2 h-4 w-4" />
-              Live Demo
+              {project.liveDemoUrl.includes('youtube') || project.liveDemoUrl.includes('youtu.be') ? 'Watch Demo' : 'Live Demo'}
             </Link>
           </Button>
         )}

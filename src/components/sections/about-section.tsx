@@ -1,5 +1,5 @@
-import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
+import { OptimizedImage } from "@/components/ui/optimized-image";
 
 export function AboutSection() {
   return (
@@ -20,13 +20,15 @@ export function AboutSection() {
           <div className="order-1 lg:order-2">
             <Card className="overflow-hidden border-2 border-primary/50 bg-transparent shadow-lg shadow-primary/20">
               <CardContent className="p-0">
-                <Image
-                  src="/assets/portrait.png"
+                <OptimizedImage
+                  src="/assests/portrait.png"
                   alt="Kunal Dubey"
                   width={600}
                   height={600}
                   className="h-full w-full object-cover"
                   data-ai-hint="man portrait"
+                  priority
+                  sizes="(max-width: 768px) 100vw, 50vw"
                 />
               </CardContent>
             </Card>

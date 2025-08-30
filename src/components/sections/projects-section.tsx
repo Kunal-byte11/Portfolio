@@ -6,9 +6,9 @@ const projects = [
     description:
       "A decentralized crowdfunding platform where anyone can launch or support Web3 projects. Features secure wallet integration and transparency using smart contracts.",
     technologies: "React.js, Thirdweb.js, Sepolia Testnet, MetaMask",
-    liveDemoUrl: "#",
-    githubUrl: "#",
-    image: "/assets/crowdfunding-dapp.png",
+    liveDemoUrl: "https://youtu.be/hbgLCGt96fY?si=awh7rYmLqj2wsIqZ",
+    githubUrl: "https://github.com/Kunal-byte11",
+    image: "/assests/Crowdfunding.png",
     aiHint: "blockchain crypto"
   },
   {
@@ -17,28 +17,19 @@ const projects = [
       "An AI-driven no-code environment, based on open-source bolt.diy, that enables users to create applications instantly and democratizes app building with AI-assisted automation.",
     technologies: "bolt.diy, AI, No-code",
     liveDemoUrl: null,
-    githubUrl: "#",
-    image: "/assets/lazii-ai.png",
+    githubUrl: "https://github.com/Kunal-byte11",
+    image: "/assests/LaziiAi.png",
     aiHint: "ai robot"
   },
-  {
-    name: "KunalAI Portfolio",
-    description:
-      "This very portfolio, an AI-powered personal website featuring a RAG-based chatbot, AI-generated project summaries, and a futuristic design.",
-    technologies: "Next.js, Genkit, Gemini, Tailwind CSS, Framer Motion",
-    liveDemoUrl: "#",
-    githubUrl: "#",
-    image: "/assets/kunal-ai-portfolio.png",
-    aiHint: "abstract code"
-  },
+
   {
     name: "Talkzii",
     description:
       "An AI companion app for emotional support, offering conversations, journaling, and recommendations. Blends empathy with technology for a human-first AI experience.",
     technologies: "React, Gemini API, Supabase, RAG",
-    liveDemoUrl: "#",
-    githubUrl: "#",
-    image: "/assets/talkzii.png",
+    liveDemoUrl: "https://talkzii.vercel.app",
+    githubUrl: "https://github.com/Kunal-byte11",
+    image: "/assests/talkzii.png",
     aiHint: "chat conversation"
   },
   {
@@ -46,9 +37,9 @@ const projects = [
     description:
       "An app where users scan ingredient lists on product packaging to learn about each ingredient’s effects and find safer alternatives, especially for Indian products.",
     technologies: "React Native, Firebase, OCR",
-    liveDemoUrl: "#",
-    githubUrl: "#",
-    image: "/assets/byl.png",
+    liveDemoUrl: "https://byl.vercel.app",
+    githubUrl: "https://github.com/Kunal-byte11",
+    image: "/assests/byl.png",
     aiHint: "ingredients scan"
   },
 ];
