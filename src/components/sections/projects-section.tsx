@@ -36,7 +36,7 @@ const projects = [
     description:
       "An AI companion app for emotional support, offering conversations, journaling, and recommendations. Blends empathy with technology for a human-first AI experience.",
     technologies: "React, Gemini API, Supabase, RAG",
-    liveDemoUrl: null,
+    liveDemoUrl: "#",
     githubUrl: "#",
     image: "/assets/talkzii.png",
     aiHint: "chat conversation"
@@ -46,7 +46,7 @@ const projects = [
     description:
       "An app where users scan ingredient lists on product packaging to learn about each ingredient’s effects and find safer alternatives, especially for Indian products.",
     technologies: "React Native, Firebase, OCR",
-    liveDemoUrl: null,
+    liveDemoUrl: "#",
     githubUrl: "#",
     image: "/assets/byl.png",
     aiHint: "ingredients scan"
