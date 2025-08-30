@@ -1,11 +1,24 @@
 "use client";
 
-import { useRef, useEffect, useCallback } from "react";
+import { useRef, useEffect, useCallback, useState } from "react";
 import { useTheme } from "next-themes";
 
 const ParticlesBackground = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
-  const { theme } = useTheme();
+  const { resolvedTheme } = useTheme();
+  const [particleColor, setParticleColor] = useState("rgba(190, 112, 255, 0.2)");
+  const [lineColor, setLineColor] = useState("rgba(112, 228, 255, 0.2)");
+
+  useEffect(() => {
+    if (resolvedTheme === 'dark') {
+      setParticleColor("rgba(190, 112, 255, 0.2)");
+      setLineColor("rgba(112, 228, 255, 0.2)");
+    } else {
+      setParticleColor("rgba(190, 112, 255, 0.4)");
+      setLineColor("rgba(112, 228, 255, 0.4)");
+    }
+  }, [resolvedTheme]);
+
 
   const draw = useCallback(
     (
@@ -16,8 +29,8 @@ const ParticlesBackground = () => {
       h: number
     ) => {
       ctx.clearRect(0, 0, w, h);
-      ctx.fillStyle = theme === 'dark' ? "rgba(190, 112, 255, 0.2)" : "rgba(190, 112, 255, 0.4)";
-      ctx.strokeStyle = theme === 'dark' ? "rgba(112, 228, 255, 0.2)" : "rgba(112, 228, 255, 0.4)";
+      ctx.fillStyle = particleColor;
+      ctx.strokeStyle = lineColor;
 
       particles.forEach((p) => {
         p.x += p.vx;
@@ -42,7 +55,7 @@ const ParticlesBackground = () => {
 
       requestAnimationFrame(() => draw(ctx, frame + 1, particles, w, h));
     },
-    [theme]
+    [particleColor, lineColor]
   );
 
   useEffect(() => {
@@ -72,9 +85,19 @@ const ParticlesBackground = () => {
     };
     window.addEventListener("resize", handleResize);
 
-    draw(ctx, 0, particles, w, h);
+    let animationFrameId: number;
+    
+    const render = () => {
+        draw(ctx, 0, particles, w, h);
+        animationFrameId = requestAnimationFrame(render);
+    }
+    
+    render();
 
-    return () => window.removeEventListener("resize", handleResize);
+    return () => {
+        window.removeEventListener("resize", handleResize);
+        cancelAnimationFrame(animationFrameId);
+    }
   }, [draw]);
 
   return (

@@ -4,6 +4,7 @@ import "./globals.css";
 import { Toaster } from "@/components/ui/toaster";
 import { Chatbot } from "@/components/chatbot";
 import { cn } from "@/lib/utils";
+import { ThemeProvider } from "next-themes";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -26,7 +27,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark">
+    <html lang="en" suppressHydrationWarning>
       <body
         className={cn(
           "font-body antialiased",
@@ -34,9 +35,16 @@ export default function RootLayout({
           spaceGrotesk.variable
         )}
       >
-        {children}
-        <Toaster />
-        <Chatbot />
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="dark"
+          enableSystem
+          disableTransitionOnChange
+        >
+          {children}
+          <Toaster />
+          <Chatbot />
+        </ThemeProvider>
       </body>
     </html>
   );
