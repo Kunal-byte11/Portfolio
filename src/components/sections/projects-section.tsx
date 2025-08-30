@@ -6,7 +6,7 @@ const projects = [
     description:
       "A decentralized crowdfunding platform where anyone can launch or support Web3 projects. Features secure wallet integration and transparency using smart contracts.",
     technologies: "React.js, Thirdweb.js, Sepolia Testnet, MetaMask",
-    liveDemoUrl: "https://youtu.be/hbgLCGt96fY?si=awh7rYmLqj2wsIqZ",
+    liveDemoUrl: "https://youtu.be/itWnGO9vWdM?si=SQlWwxNmALZ5M307",
     githubUrl: "https://github.com/Kunal-byte11",
     image: "/assests/Crowdfunding.png",
     aiHint: "blockchain crypto"
