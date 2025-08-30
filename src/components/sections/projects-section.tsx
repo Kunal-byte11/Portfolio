@@ -31,6 +31,26 @@ const projects = [
     image: "/assets/kunal-ai-portfolio.png",
     aiHint: "abstract code"
   },
+  {
+    name: "Talkzii",
+    description:
+      "An AI companion app for emotional support, offering conversations, journaling, and recommendations. Blends empathy with technology for a human-first AI experience.",
+    technologies: "React, Gemini API, Supabase, RAG",
+    liveDemoUrl: null,
+    githubUrl: "#",
+    image: "/assets/talkzii.png",
+    aiHint: "chat conversation"
+  },
+  {
+    name: "BYL (Behind Your Label)",
+    description:
+      "An app where users scan ingredient lists on product packaging to learn about each ingredient’s effects and find safer alternatives, especially for Indian products.",
+    technologies: "React Native, Firebase, OCR",
+    liveDemoUrl: null,
+    githubUrl: "#",
+    image: "/assets/byl.png",
+    aiHint: "ingredients scan"
+  },
 ];
 
 export function ProjectsSection() {
