@@ -27,7 +27,7 @@ const projects = [
     description:
       "An AI companion app for emotional support, offering conversations, journaling, and recommendations. Blends empathy with technology for a human-first AI experience.",
     technologies: "React, Gemini API, Supabase, RAG",
-    liveDemoUrl: "https://talkzii.vercel.app",
+    liveDemoUrl: "https://talkzii.com",
     githubUrl: "https://github.com/Kunal-byte11",
     image: "/assests/talkzii.png",
     aiHint: "chat conversation"
@@ -37,7 +37,7 @@ const projects = [
     description:
       "An app where users scan ingredient lists on product packaging to learn about each ingredient’s effects and find safer alternatives, especially for Indian products.",
     technologies: "React Native, Firebase, OCR",
-    liveDemoUrl: "https://byl.vercel.app",
+    liveDemoUrl: "https://cleartag.netlify.app",
     githubUrl: "https://github.com/Kunal-byte11",
     image: "/assests/byl.png",
     aiHint: "ingredients scan"
