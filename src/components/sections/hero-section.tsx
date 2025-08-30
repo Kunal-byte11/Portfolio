@@ -1,3 +1,5 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
 import { TypingAnimation } from "@/components/typing-animation";
 import { ArrowDown, BrainCircuit } from "lucide-react";
