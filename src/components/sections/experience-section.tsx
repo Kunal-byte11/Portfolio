@@ -1,24 +1,31 @@
 const experiences = [
   {
-    role: "AI Developer",
-    company: "FutureTech Inc.",
-    period: "2022 - Present",
+    role: "Hackathon Finalist",
+    company: "I Love Hackathon Bengaluru",
+    period: "2024",
     description:
-      "Developing and deploying AI-powered web applications using Next.js and Genkit. Led the development of a RAG-based customer support chatbot, improving response times by 40%.",
+      "Achieved finalist status in a competitive hackathon, showcasing rapid prototyping and problem-solving skills under pressure.",
   },
   {
-    role: "Full-Stack Developer",
-    company: "Innovate Solutions",
-    period: "2020 - 2022",
+    role: "Participant",
+    company: "LOC .7.0",
+    period: "2024",
     description:
-      "Built and maintained scalable web applications for various clients. Specialized in React and Node.js, delivering high-quality, responsive user interfaces.",
+      "Engaged in a competitive programming and development event, honing skills in algorithms and software creation.",
   },
   {
-    role: "Hackathon Winner",
-    company: "AI for Good Hackathon",
-    period: "2021",
+    role: "Participant",
+    company: "Hackniche",
+    period: "2023",
     description:
-      "Won first place for creating an application that helps identify misinformation using natural language processing. Presented the project to a panel of industry experts.",
+      "Collaborated with a team to build a novel project during a fast-paced hackathon environment.",
+  },
+  {
+    role: "External Round Qualifier",
+    company: "Smart India Hackathon (SIH)",
+    period: "2023",
+    description:
+      "Successfully qualified for the external round of India's largest hackathon, demonstrating strong technical and innovative capabilities.",
   },
 ];
 
@@ -27,10 +34,10 @@ export function ExperienceSection() {
     <section id="experience" className="py-24 sm:py-32">
       <div className="container">
         <h2 className="text-center font-headline text-3xl font-bold tracking-tight sm:text-4xl">
-          Career Journey
+          Achievements & Journey
         </h2>
         <p className="mt-4 text-center text-lg text-muted-foreground">
-          My professional experience and milestones.
+          My milestones and accomplishments.
         </p>
         <div className="relative mt-12">
           <div className="absolute left-1/2 top-0 h-full w-0.5 -translate-x-1/2 bg-border"></div>

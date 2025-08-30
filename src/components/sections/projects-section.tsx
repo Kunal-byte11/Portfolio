@@ -2,14 +2,54 @@ import { ProjectCard } from "./project-card";
 
 const projects = [
   {
-    name: "AI Plant Diagnosis",
+    name: "Crowdfunding DApp",
     description:
-      "A web app that uses a machine learning model to diagnose plant diseases from images. Built with Next.js and TensorFlow.js.",
-    technologies: "Next.js, TensorFlow.js, Tailwind CSS, Firebase",
+      "A decentralized crowdfunding platform where anyone can launch or support Web3 projects. Features secure wallet integration and transparency using smart contracts.",
+    technologies: "React.js, Thirdweb.js, Sepolia Testnet, MetaMask",
     liveDemoUrl: "#",
     githubUrl: "#",
     image: "https://picsum.photos/600/400?random=1",
-    aiHint: "plant technology"
+    aiHint: "blockchain crypto"
+  },
+  {
+    name: "Lazii.ai",
+    description:
+      "An AI-driven no-code environment, based on open-source bolt.diy, that enables users to create applications instantly and democratizes app building with AI-assisted automation.",
+    technologies: "bolt.diy, AI, No-code",
+    liveDemoUrl: "#",
+    githubUrl: "#",
+    image: "https://picsum.photos/600/400?random=2",
+    aiHint: "ai robot"
+  },
+  {
+    name: "Incorrupta",
+    description:
+      "A decentralized document storage solution for police departments, ensuring tamper-proof case files using Web3 and IPFS to promote transparency and prevent corruption.",
+    technologies: "Web3, IPFS, Decentralized Storage",
+    liveDemoUrl: "#",
+    githubUrl: "#",
+    image: "https://picsum.photos/600/400?random=3",
+    aiHint: "secure documents"
+  },
+  {
+    name: "Talkzii",
+    description:
+      "An AI companion app for emotional support, offering conversations, journaling, and recommendations. It blends empathy with technology for a human-first AI experience.",
+    technologies: "React, Gemini API, Supabase, RAG",
+    liveDemoUrl: "#",
+    githubUrl: "#",
+    image: "https://picsum.photos/600/400?random=4",
+    aiHint: "conversation bubbles"
+  },
+  {
+    name: "BYL (Behind Your Label)",
+    description:
+      "Scan ingredient lists on product packaging to learn about each ingredient’s effects and find safer alternatives, with a focus on Indian products.",
+    technologies: "Mobile App, OCR, Data Scraping",
+    liveDemoUrl: "#",
+    githubUrl: "#",
+    image: "https://picsum.photos/600/400?random=5",
+    aiHint: "ingredients scan"
   },
   {
     name: "KunalAI Portfolio",
@@ -18,18 +58,8 @@ const projects = [
     technologies: "Next.js, Genkit, Gemini, Tailwind CSS, Framer Motion",
     liveDemoUrl: "#",
     githubUrl: "#",
-    image: "https://picsum.photos/600/400?random=2",
+    image: "https://picsum.photos/600/400?random=6",
     aiHint: "abstract code"
-  },
-  {
-    name: "Interactive Data Visualization",
-    description:
-      "A platform for creating and sharing interactive charts and graphs. Uses D3.js for rendering and provides a user-friendly interface for data input.",
-    technologies: "React, D3.js, Node.js, Express",
-    liveDemoUrl: "#",
-    githubUrl: "#",
-    image: "https://picsum.photos/600/400?random=3",
-    aiHint: "data visualization"
   },
 ];
 

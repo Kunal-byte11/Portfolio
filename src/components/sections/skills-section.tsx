@@ -5,33 +5,38 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Code, Database, Brain, Wand2, Server } from "lucide-react";
+import { Code, Database, Brain, Wand2, Server, Globe } from "lucide-react";
 
 const skills = [
   {
-    category: "Frontend",
+    category: "Frontend Development",
     icon: <Code className="h-6 w-6 text-accent" />,
-    items: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
+    items: ["React.js", "Next.js", "Tailwind CSS", "Bootstrap", "Framer Motion"],
   },
   {
-    category: "Backend",
+    category: "Backend & Databases",
     icon: <Server className="h-6 w-6 text-accent" />,
-    items: ["Node.js", "Express", "Python"],
+    items: ["Firebase", "Supabase", "Node.js (basics)"],
   },
   {
-    category: "Databases",
-    icon: <Database className="h-6 w-6 text-accent" />,
-    items: ["Firebase", "PostgreSQL", "MongoDB"],
+    category: "Web3",
+    icon: <Globe className="h-6 w-6 text-accent" />,
+    items: ["Thirdweb.js", "MetaMask", "Sepolia Testnet", "IPFS"],
   },
   {
-    category: "AI / ML",
+    category: "AI / GenAI",
     icon: <Brain className="h-6 w-6 text-accent" />,
-    items: ["Genkit", "Gemini API", "TensorFlow.js", "HuggingFace"],
+    items: ["Prompt Engineering", "RAG Applications", "LLM Integration (OpenAI, Gemini, Dolphin AI)", "Hugging Face (basics)"],
   },
   {
-    category: "Tools & Others",
+    category: "Data & ML",
+    icon: <Database className="h-6 w-6 text-accent" />,
+    items: ["Python (NumPy, Pandas, Scikit-learn basics)", "Vector Databases (Pinecone, FAISS basics)"],
+  },
+  {
+    category: "Tools & Workflow",
     icon: <Wand2 className="h-6 w-6 text-accent" />,
-    items: ["Git", "Docker", "Vercel", "Google Cloud"],
+    items: ["Git & GitHub", "Vercel", "Netlify", "Streamlit", "Web Scraping & APIs"],
   },
 ];
 
