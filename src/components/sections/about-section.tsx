@@ -21,7 +21,7 @@ export function AboutSection() {
             <Card className="overflow-hidden border-2 border-primary/50 bg-transparent shadow-lg shadow-primary/20">
               <CardContent className="p-0">
                 <Image
-                  src="https://picsum.photos/600/600"
+                  src="/assets/portrait.png"
                   alt="Kunal Dubey"
                   width={600}
                   height={600}

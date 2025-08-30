@@ -8,7 +8,7 @@ const projects = [
     technologies: "React.js, Thirdweb.js, Sepolia Testnet, MetaMask",
     liveDemoUrl: "#",
     githubUrl: "#",
-    image: "https://picsum.photos/600/400?random=1",
+    image: "/assets/crowdfunding-dapp.png",
     aiHint: "blockchain crypto"
   },
   {
@@ -18,7 +18,7 @@ const projects = [
     technologies: "bolt.diy, AI, No-code",
     liveDemoUrl: "#",
     githubUrl: "#",
-    image: "https://picsum.photos/600/400?random=2",
+    image: "/assets/lazii-ai.png",
     aiHint: "ai robot"
   },
   {
@@ -28,7 +28,7 @@ const projects = [
     technologies: "Web3, IPFS, Decentralized Storage",
     liveDemoUrl: "#",
     githubUrl: "#",
-    image: "https://picsum.photos/600/400?random=3",
+    image: "/assets/incorrupta.png",
     aiHint: "secure documents"
   },
   {
@@ -38,7 +38,7 @@ const projects = [
     technologies: "React, Gemini API, Supabase, RAG",
     liveDemoUrl: "#",
     githubUrl: "#",
-    image: "https://picsum.photos/600/400?random=4",
+    image: "/assets/talkzii.png",
     aiHint: "conversation bubbles"
   },
   {
@@ -48,7 +48,7 @@ const projects = [
     technologies: "Mobile App, OCR, Data Scraping",
     liveDemoUrl: "#",
     githubUrl: "#",
-    image: "https://picsum.photos/600/400?random=5",
+    image: "/assets/byl.png",
     aiHint: "ingredients scan"
   },
   {
@@ -58,7 +58,7 @@ const projects = [
     technologies: "Next.js, Genkit, Gemini, Tailwind CSS, Framer Motion",
     liveDemoUrl: "#",
     githubUrl: "#",
-    image: "https://picsum.photos/600/400?random=6",
+    image: "/assets/kunal-ai-portfolio.png",
     aiHint: "abstract code"
   },
 ];
